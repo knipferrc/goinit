@@ -1,0 +1,49 @@
+{
+  "name": "trunk-react-app",
+  "version": "0.0.1",
+  "description": "React app created with trunk",
+  "author": "Your Name Here",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "trunk"
+  ],
+  "scripts": {
+    "start": "cross-env NODE_ENV=development parcel index.html ",
+    "build": "cross-env NODE_ENV=production parcel build index.html --no-minify --public-url /",
+    "format": "prettier --write \"src/**/*.js\""
+  },
+  "dependencies": {
+    "autoprefixer": "^7.2.2",
+    "babel-preset-react-app": "^3.1.0",
+    "parcel-bundler": "^1.2.0",
+    "prettier": "^1.9.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-config": "^1.0.0-beta.4",
+    "react-router-dom": "^4.2.2",
+    "styled-components": "^2.2.4"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.1"
+  },
+  "postcss": {
+    "modules": false,
+    "plugins": {
+      "autoprefixer": {
+        "browsers": [
+          ">1%",
+          "last 4 versions",
+          "Firefox ESR",
+          "not ie < 9"
+        ],
+        "flexbox": "no-2009"
+      }
+    }
+  },
+  "prettier": {
+    "trailingComma": "none",
+    "singleQuote": true,
+    "semi": false
+  }
+}
