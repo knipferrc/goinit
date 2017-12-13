@@ -43,6 +43,10 @@ func CopyDir(src string, dst string) (err error) {
 		dstPath := filepath.Join(dst, entry.Name())
 
 		if entry.IsDir() {
+			if entry.Name() == "node_modules" || entry.Name() == "dist" {
+				continue
+			}
+
 			err = CopyDir(srcPath, dstPath)
 			if err != nil {
 				return
