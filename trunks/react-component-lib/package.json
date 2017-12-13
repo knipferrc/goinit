@@ -1,0 +1,29 @@
+{
+  "name": "trunk-react-component-lib",
+  "version": "0.0.1",
+  "description": "React component lib created with trunk",
+  "author": "Your Name Here",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "trunk"
+  ],
+  "module": "src/index.js",
+  "main": "dist",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "format": "prettier --write \"src/**/*.js\""
+  },
+  "dependencies": {
+    "microbundle": "^0.2.3",
+    "prettier": "^1.9.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "prettier": {
+    "trailingComma": "none",
+    "singleQuote": true,
+    "semi": false
+  }
+}

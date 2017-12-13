@@ -1,2 +1,2 @@
-# GoInit-React-App
-- An awesome react application
+# Trunk React App
+- An awesome react app generated with trunk
